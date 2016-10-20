@@ -25,6 +25,7 @@ class Person {
 let jim = Person(name: "Jim", height: 64.0, favoriteFood: "Pasta")
 
 print(jim.description)
+
 //Name: Jim
 //Height: 64.0
 //Favorite Food: Pasta
@@ -34,6 +35,7 @@ print(jim.description)
 protocol PrettyDescription {
     
     var description: String { get }
+    
     
 }
 
@@ -58,6 +60,7 @@ let prettyThings: [PrettyDescription] = []
 for prettyThing in prettyThings {
     
     print(prettyThing.description)
+    
     
 }
 
